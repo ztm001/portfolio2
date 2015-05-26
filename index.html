@@ -9,6 +9,7 @@
   
   
   <link href="css/bootstrap-grid-only.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
 
@@ -24,6 +25,10 @@
 <body>
 
   <div id="home" class="top container-fluid">
+
+      <div id="nav-bar">
+        <h3>Zac Maguire</h3>
+      </div>
   
 
         <div class="row">
@@ -37,6 +42,10 @@
           </div>
         </div>
 
+        <div id="top-right-bar">
+          
+        </div>
+
            <!-- <ul id="nav">
               <li><a href="#work">Work</a></li>
               <li><a href="#about">About</a></li>
@@ -47,7 +56,33 @@
 
   </div>	<!-- Closing 'top' + container fluid -->
 
+
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- Work Section -->
+
+
 
   <div id="work" class="container">
 
@@ -60,8 +95,21 @@
 
       <div class="row">
           <div class="col-sm-6">
-            <div id="getfree"></div>
-          </div>
+
+            <a id="demo01" href="#animatedModal"><div id="getfree"></div></a>
+
+            <!-- ==================================== Start getfree modal content -->
+            <div id="animatedModal">
+                <div class="close-animatedModal"> 
+                    <p>CLOSE MODAL</p>
+                </div>                    
+                <div class="modal-content">
+                      <h1>GET FREE Modal Content!!!!!!!!</h1>
+                </div>
+            </div>
+           <!-- ====================================== !!! end getfree modal content -->
+
+          </div> <!-- close col-sm-6 -->
 
           <div class="col-sm-6">
 
@@ -191,7 +239,41 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="src/js/animatedmodal.min.js"></script>
 <script src="src/js/main.js"></script>
+
+<script>
+
+ $("#demo01").animatedModal({
+
+        color:'#e5da00'
+        
+    });
+
+
+
+
+  // function getScrollTop(){
+  //       if(typeof pageYOffset!= 'undefined'){
+  //           //most browsers except IE before #9
+  //           return pageYOffset;
+  //       }
+  //       else{
+  //           var B= document.body; //IE 'quirks'
+  //           var D= document.documentElement; //IE with doctype
+  //           D= (D.clientHeight)? D: B;
+  //           return D.scrollTop;
+  //       }
+  //   }
+    
+  //   alert(getScrollTop())
+
+ 
+
+
+  </script>
+
+
 
 
 
