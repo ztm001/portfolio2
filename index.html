@@ -96,77 +96,124 @@
       <div class="row">
           <div class="col-sm-6">
 
-            <a id="demo01" href="#animatedModal"><div id="getfree"></div></a>
-
-            <!-- ==================================== Start getfree modal content -->
-            <div id="animatedModal">
-                <div class="close-animatedModal"> 
-                    <p>CLOSE MODAL</p>
-                </div>                    
-                <div class="modal-content">
-                      <h1>GET FREE Modal Content!!!!!!!!</h1>
-                </div>
-            </div>
-           <!-- ====================================== !!! end getfree modal content -->
+                <a id="gfmodal" href="#animatedModal">
+                  <div id="getfree"></div>
+                </a> 
 
           </div> <!-- close col-sm-6 -->
 
-          <div class="col-sm-6">
 
-                <div class="row subrowtop">
-                    <div class="col-sm-6">
-                      <div id="damagedgoods"></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div id="fontface"></div>
-                    </div>
+
+          <div class="col-sm-6">
+            <div class="row subrowtop">
+              <div class="col-sm-6">
+
+                    <a id="dgmodal" href="#dgwork"><div id="damagedgoods"></div></a>
+
+              </div><!-- end dg col-sm-6 -->
+
+
+              <div class="col-sm-6">
+
+                  <a id="ffmodal" href="#ffwork"><div id="fontface"></div></a>
+
+              </div>
+            </div>
+
+
+            <div class="row subrowbottom">
+
+                <div class="col-sm-6">
+                  <a id="lodmodal" href="#lodwork"><div id="lordsofdogtown"></div></a>
                 </div>
-                <div class="row subrowbottom">
-                    <div class="col-sm-6">
-                      <div id="lordsofdogtown"></div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div id="surfaid"></div>
-                    </div>
+
+                <div class="col-sm-6">
+                  <a id="surfmodal" href="#surfwork"><div id="surfaid"></div></a>
+                  
                 </div>
+            </div>
 
           </div> <!-- closing 2nd col-md-6 -->
 
       </div> <!-- closing row -->
 
-     <!--   <div class="row">
-          <div class="col-md-6">
-            <div id="lordsofdogtown"></div>
-          </div>
-          <div class="col-md-6">
-            <div id="surfaid"></div>
-          </div>
-      </div>
-
-      <div class="row">
-          <div class="col-md-6">
-            <div id="fontface"></div>
-          </div>
-      </div> -->
+   
 
 
 
   </div> <!-- closing work container -->
 
 
-<!-- About Section -->
+  <!-- Modal Content Section = One for Getfree, DG, Fontface, LOD and Surfaid -->
+  <!-- ======================================================================== 
+      Start getfree modal content 
+    ========================================================================-->
+                <div id="animatedModal">
+                    <div class="close-animatedModal"> 
+                        <p>CLOSE MODAL</p>
+                    </div>                    
+                    <div class="modal-content">
+                          <h1>GET FREE Modal Content!!!!!!!!</h1>
+                    </div>
+                </div> <!--  !!! end getfree modal content -->
 
-     <!--    <div class="container">
-          <div class="row">
+
+   <!-- ======================================================================== 
+      Start damagedgoods modal content 
+    ========================================================================-->
+                 
+                <div id="dgwork">
+                    <div class="close-dgwork"> 
+                        <p>CLOSE MODAL</p>
+                    </div>                    
+                    <div class="modal-content">
+                          <h1>DG Modal Content!!!!!!!!</h1>
+                    </div>
+                </div><!-- !!! end dg modal content -->
+
+   <!-- ======================================================================== 
+      Start fontface modal content 
+    ========================================================================-->
+                
+                <div id="ffwork">
+                    <div class="close-ffwork"> 
+                        <p>CLOSE MODAL</p>
+                    </div>                    
+                    <div class="modal-content">
+                          <h1>Fontface Modal Content!!!!!!!!</h1>
+                    </div>
+                </div><!-- !!! end dg modal content -->
+    
+    <!-- ======================================================================== 
+      Start lordsofdogtown modal content 
+    ========================================================================-->
+                
+                <div id="lodwork">
+                    <div class="close-lodwork"> 
+                        <p>CLOSE MODAL</p>
+                    </div>                    
+                    <div class="modal-content">
+                          <h1>Fontface Modal Content!!!!!!!!</h1>
+                    </div>
+                </div><!-- !!! end dg modal content -->
+    
+    <!-- ======================================================================== 
+      Start surfaid modal content 
+    ========================================================================-->
+                
+                <div id="surfwork">
+                    <div class="close-surfwork"> 
+                        <p>CLOSE MODAL</p>
+                    </div>                    
+                    <div class="modal-content">
+                          <h1>Fontface Modal Content!!!!!!!!</h1>
+                    </div>
+                </div><!-- !!! end dg modal content -->
 
 
-              <h2>About</h2>
-             
-             
 
 
-          </div>
-        </div> -->
+    
 
   <!-- Contact Section -->
 
@@ -244,11 +291,31 @@
 
 <script>
 
- $("#demo01").animatedModal({
+  $('#gfmodal').animatedModal({
 
         color:'#e5da00'
         
-    });
+  });
+
+  $("#dgmodal").animatedModal({
+                modalTarget:'dgwork',
+                color:'#3498db',
+  });
+
+  $("#ffmodal").animatedModal({
+                modalTarget:'ffwork',
+                color:'#34911b',
+  });
+
+  $("#lodmodal").animatedModal({
+                modalTarget:'lodwork',
+                color:'#322222',
+  });
+
+  $("#surfmodal").animatedModal({
+                modalTarget:'surfwork',
+                color:'#32567d',
+  });
 
 
 
