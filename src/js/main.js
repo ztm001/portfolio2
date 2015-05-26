@@ -5,37 +5,6 @@
 
 $(document).ready(function(){
 
-	// Owl carousel slider ====================================
-
-	initOwl();
-
-    function initOwl(){
-
-	    $('.owl-carousel').owlCarousel({
-	        loop:true,
-	        margin:15,
-	        navText:false,
-	        responsiveClass:true,
-	        responsive:{
-	            0:{
-	                items:1,
-	                nav:true   
-	            },
-	            600:{
-	                items:3,
-	                nav:true
-	            },
-	            1000:{
-	                items:3,
-	                nav:true,
-	                dots:true
-	            }
-	        }
-	    });
-
-	}; // closing initOwl
-
-
 
 	// On window load fade in ====================================
 
@@ -55,12 +24,6 @@ $(document).ready(function(){
 	};
 
 	
-
-		
-
-	
-
-
 
 }); // Closing document ready
 

@@ -70,29 +70,23 @@
 
 
 
-
-
-// Owl Slider Styles
-
-#projectSlider {
-	margin-top: 10%;
-	transition: opacity 1s ease-out;
-	
+#getfree {
+	padding: 31% 0;
 }
 
-.opacity0 {
-	opacity: 0;
-	transition: opacity 1s ease-out;
-}
 
-#getfree,
 #lordsofdogtown,
 #fontface,
 #surfaid,
 #damagedgoods {
-	padding: 40%;
-	background-color: $main-col; 
+	padding: 30% 0;
+	max-width: 100%;
 }
+
+.subrowtop {
+	margin-bottom: 5%;
+}
+
 
 
 
@@ -141,40 +135,116 @@
   		background-size: cover;
 }
 
-@media screen and (min-width: 700px) {
+
+// Filter black and white at desktop
+// @media screen and (min-width: 700px) {
     
-	#getfree,
-	#lordsofdogtown,
-	#fontface,
-	#surfaid,
-	#damagedgoods {
-		-webkit-filter: grayscale(100%); 
-  		filter: grayscale(100%);
-  		transition: all 1s ease-out;
-	}
+// 	#getfree,
+// 	#lordsofdogtown,
+// 	#fontface,
+// 	#surfaid,
+// 	#damagedgoods {
+// 		-webkit-filter: grayscale(100%); 
+//   		filter: grayscale(100%);
+//   		transition: all 1s ease-out;
+// 	}
 
-	#getfree:hover,
-	#lordsofdogtown:hover,
-	#fontface:hover,
-	#surfaid:hover,
-	#damagedgoods:hover {
-		-webkit-filter: none; 
-  		filter: none;
-  		transition: all 0.5s ease-out;
-	}
+// 	#getfree:hover,
+// 	#lordsofdogtown:hover,
+// 	#fontface:hover,
+// 	#surfaid:hover,
+// 	#damagedgoods:hover {
+// 		-webkit-filter: none; 
+//   		filter: none;
+//   		transition: all 0.5s ease-out;
+// 	}
 
 
-}
+// }
 
 
 // Contact Styles
 
 #contact {
-	padding: 600px 0;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#myphoto {
+	padding-top: 225px;
+	padding-bottom: 225px;
+	background: url("../images/lake.jpg") no-repeat center center;
+ 		-webkit-background-size: cover;
+ 		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+
+}
+
+
+.description {
+	padding: 11.5%;
+	font-size: 1.5em;
+	background-color: $main-col;
+	color: $splash-col;
+}
+
+
+.social img {
+	max-width: 60px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+	.social img {
+		max-width: 35px;
+	}
+}
+
+
+.github {
+	background-color: #333333;
+}
+
+.linkedin {
+	background-color: #444444;
+}
+
+.facebook {
+	background-color: #555555;
+}
+
+.instagram {
+	background-color: #666666;
+}
+
+.myemail {
+	padding: 25px 0;
+	color: $main-col;
+	background-color: $splash-col;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.social:hover,
+.myemail:hover {
+	opacity: 0.8;
 }
 
 
 
+// setting contact columns the same height
+// .sameheight {
+//     display: table;
+// }
+
+// .setsameheight {
+//     float: none;
+//     display: table-cell;
+//     vertical-align: bottom;
+// }
 
 
 
