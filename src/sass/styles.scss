@@ -42,8 +42,11 @@
 }
 
 #nameText {
+	font-family: $header-font;
 	margin-top: 10px;
 	display: none;
+	font-size: 3em;
+
 }
 
 
@@ -203,12 +206,21 @@
 #surfwork,
 #ffwork {
 	color: white;
-	border: 15px solid $main-col;
+	// border: 15px solid $main-col;
+}
+
+.close-svg {
+	max-width: 40px;
+	display: block;
+	float: right;
+	margin: 15px;
+	cursor: pointer;
 }
 
 .modal-header {
 	text-align: center;
-	font-size: 2em;
+	font-family: $header-font;
+	font-size: 3em;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-bottom: 5%;
@@ -216,25 +228,41 @@
 
 
 .project-info {	
-	background-color: $main-col;
-	padding: 10%;
+	padding: 0 0 0 10%;
 	border-radius: 5px;
 }
 
 .project-info h4 {	
-	max-width: 70px;
-	padding: 10px 0;
+	font-family: $header-font;
+	font-size: 2.5em;
 	margin: 10px 0;
-	text-align: center;
-	background-color: #555555;
-	color: black;
+}
 
+.project-info p {	
+	font-size: 1.2em;
 }
 
 
-#gfwork img {
+.modal-content img {
 	max-width: 100%;
 	height: auto;
+}
+
+.view-site {
+	text-align: center;
+	font-family: $header-font;
+	font-size: 3em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 5%;
+	
+}
+
+.view-site p {
+	max-width: 20%;
+	border: thin solid $splash-col;
+	margin: 0 auto;
+	text-decoration: none;
 }
 
 
