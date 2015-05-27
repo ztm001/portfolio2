@@ -36,6 +36,7 @@
 		height: 100%;
   		position: relative;
   		border: 15px solid $body-col;
+  		overflow: none;
   		
 		
 }
@@ -189,6 +190,52 @@
 
 
 // }
+
+
+
+// Modal Styles
+
+
+
+#gfwork,
+#dgwork,
+#lodwork,
+#surfwork,
+#ffwork {
+	color: white;
+	border: 15px solid $main-col;
+}
+
+.modal-header {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 5%;
+}
+
+
+.project-info {	
+	background-color: $main-col;
+	padding: 10%;
+	border-radius: 5px;
+}
+
+.project-info h4 {	
+	max-width: 70px;
+	padding: 10px 0;
+	margin: 10px 0;
+	text-align: center;
+	background-color: #555555;
+	color: black;
+
+}
+
+
+#gfwork img {
+	max-width: 100%;
+	height: auto;
+}
 
 
 // Contact Styles

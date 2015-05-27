@@ -30,15 +30,9 @@ $(document).ready(function(){
 
 	$('#nav-bar').hide();
 
-	// $(window).scroll(function() {
-	//    var hT = $('#work').offset().top,
-	//        hH = $('#work').outerHeight(),
-	//        wH = $(window).height(),
-	//        wS = $(this).scrollTop();
-	//    if (wS > (hT+hH-wH)){
-	//        alert('you have scrolled to the h1!');
-	//    }
-	// });
+	$(window).scroll(function() {
+	   $('#nav-bar').show();
+	});
 
 	// $('#work').scroll(function() {
 	//     $('#nav-bar').hide();
