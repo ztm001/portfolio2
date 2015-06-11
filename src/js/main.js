@@ -28,7 +28,7 @@ $(document).ready(function(){
 	// Scroll to unhide nav ====================================
 
 
-	$('#nav-bar').hide();
+	// $('#nav-bar').hide();
 
 	$(window).scroll(function() {
 	   $('#nav-bar').show();
