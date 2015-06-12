@@ -55,19 +55,95 @@ h1 {
 h2 {
   font-size: 1.5em; }
 
-/* line 20, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/*! responsive-nav.js 1.0.39 by @viljamis */
+/* line 10, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none; }
+
+/* line 18, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+.nav-collapse li {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 0.6em; }
+
+/* line 25, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1; }
+
+/* line 34, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+.nav-collapse.opened {
+  max-height: 9999px; }
+
+/* line 38, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-right: 5%; }
+
+/* line 49, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+.nav-logo {
+  padding-left: 5%;
+  float: left;
+  text-align: left; }
+
+@media screen and (min-width: 40em) {
+  /* line 57, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+  .js .nav-collapse {
+    position: relative; }
+
+  /* line 60, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+  .js .nav-collapse.closed {
+    max-height: none; }
+
+  /* line 63, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+  .nav-toggle {
+    display: none; }
+
+  /* line 66, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+  #nav {
+    width: 45%;
+    float: right;
+    padding-left: 15%; }
+
+  /* line 71, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+  #nav li {
+    width: 30%;
+    float: left;
+    padding-top: 6px; }
+
+  /* line 76, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/responsive-nav */
+  .nav-logo {
+    width: 45%; }
+ }
+
+/* line 22, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #nav-bar {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 10px 0 5px 32px;
+  padding: 10px 0 5px 0;
   background-color: #fff;
   font-size: 1.5em;
-  z-index: 1; }
+  z-index: 1;
+  text-align: right; }
 
-/* line 35, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 38, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .top {
   width: 100%;
   height: 100%;
@@ -76,13 +152,13 @@ h2 {
   background: url("../images/port-background.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 49, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 52, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .v-align {
   height: 100%;
   width: 100%;
   display: table; }
 
-/* line 56, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 59, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #nameText {
   font-family: 'Bebas Neue', sans-serif;
   color: #fff;
@@ -92,82 +168,57 @@ h2 {
   text-align: center;
   font-size: 1em; }
 
-/* line 67, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 70, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #nameText h1 {
   padding-bottom: 15px; }
 
-/* line 71, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 74, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #nameText h2 {
   font-size: 1.2em; }
 
-/* line 80, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
-#nav {
-  width: 45%;
-  float: right;
-  color: black;
-  font-size: 0.6em;
-  padding-left: 10%;
-  padding-top: 7px; }
-
-/* line 89, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
-.nav-logo {
-  float: left;
-  width: 45%;
-  padding-left: 20px; }
-
-/* line 95, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
-#nav li {
-  float: left;
-  margin: 0 20px; }
-
-/* line 107, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
-#nav li a {
-  text-decoration: none;
-  color: black; }
-
-/* line 121, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 84, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #getfree {
   padding: 31% 0; }
 
-/* line 129, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 92, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #lordsofdogtown, #fontface, #surfaid, #damagedgoods {
   padding: 30% 0;
   max-width: 100%; }
 
-/* line 134, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 97, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .subrowtop {
   margin-bottom: 5%; }
 
-/* line 144, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 107, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #getfree {
   background: url("../images/getfree-thumb.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 154, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 117, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #lordsofdogtown {
   background: url("../images/lod-thumb.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 162, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 125, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #fontface {
   background: url("../images/fontface-thumb.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 170, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 133, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #surfaid {
   background: url("../images/surfaid-thumb.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 178, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 141, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #damagedgoods {
   background: url("../images/dgz-thumb.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 223, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 186, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #gfwork, #dgwork, #lodwork, #surfwork, #ffwork {
   color: white; }
 
-/* line 228, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 191, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .close-svg {
   max-width: 40px;
   display: block;
@@ -175,7 +226,7 @@ h2 {
   margin: 15px;
   cursor: pointer; }
 
-/* line 236, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 199, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .modal-header {
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
@@ -184,27 +235,27 @@ h2 {
   padding-bottom: 15px;
   margin-bottom: 5%; }
 
-/* line 246, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 209, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .project-info {
   padding: 0 0 0 10%;
   border-radius: 5px; }
 
-/* line 251, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 214, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .project-info h4 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.5em;
   margin: 10px 0; }
 
-/* line 257, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 220, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .project-info p {
   font-size: 1.2em; }
 
-/* line 262, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 225, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .modal-content img {
   max-width: 100%;
   height: auto; }
 
-/* line 267, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 230, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .view-site {
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
@@ -213,33 +264,33 @@ h2 {
   padding-bottom: 15px;
   margin-bottom: 5%; }
 
-/* line 277, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 240, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .view-site p {
   max-width: 20%;
   border: thin solid #e5da00;
   margin: 0 auto;
   text-decoration: none; }
 
-/* line 287, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 250, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #contact {
   margin-top: 5%;
   margin-bottom: 5%; }
 
-/* line 292, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 255, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 #myphoto {
   padding-top: 225px;
   padding-bottom: 225px;
   background: url("../images/lake.jpg") no-repeat center center;
   background-size: cover; }
 
-/* line 304, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 267, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .description {
   padding: 11.5%;
   font-size: 1.5em;
   background-color: #444444;
   color: #e5da00; }
 
-/* line 312, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 275, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .social img {
   max-width: 60px;
   display: block;
@@ -247,28 +298,28 @@ h2 {
   padding: 10px 0; }
 
 @media screen and (max-width: 600px) {
-  /* line 320, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+  /* line 283, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
   .social img {
     max-width: 35px; }
  }
 
-/* line 326, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 289, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .github {
   background-color: #222222; }
 
-/* line 330, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 293, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .linkedin {
   background-color: #444444; }
 
-/* line 334, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 297, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .facebook {
   background-color: #555555; }
 
-/* line 338, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 301, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .instagram {
   background-color: #666600; }
 
-/* line 342, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 305, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .myemail {
   padding: 25px 0;
   color: #444444;
@@ -276,6 +327,6 @@ h2 {
   text-align: center;
   font-size: 1.5em; }
 
-/* line 351, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
+/* line 314, /Users/Zac/Documents/bootcamp/assignments/project7-portfolio/website/src/sass/styles.scss */
 .social:hover, .myemail:hover {
   opacity: 0.8; }

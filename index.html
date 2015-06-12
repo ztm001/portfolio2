@@ -29,7 +29,7 @@
       <div id="nav-bar">
         <a href="index.html" class="nav-logo">ZTM</a>
 
-        <ul id="nav">
+        <ul id="nav" class="nav-collapse">
           <li><a href="#work">Work</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -318,9 +318,26 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="src/js/animatedmodal.min.js"></script>
+<script src="src/js/responsive-nav.js"></script>
 <script src="src/js/main.js"></script>
 
 <script>
+
+    var nav = responsiveNav(".nav-collapse", { // Selector
+    animate: true, // Boolean: Use CSS3 transitions, true or false
+    transition: 300, // Integer: Speed of the transition, in milliseconds
+    label: "Menu", // String: Label for the navigation toggle
+    insert: "before", // String: Insert the toggle before or after the navigation
+    customToggle: "", // Selector: Specify the ID of a custom toggle
+    closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+    openPos: "relative", // String: Position of the opened nav, relative or static
+    navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+    navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+    jsClass: "js", // String: 'JS enabled' class which is added to  element
+    init: function(){}, // Function: Init callback
+    open: function(){}, // Function: Open callback
+    close: function(){} // Function: Close callback
+  });
 
   $('#gfmodal').animatedModal({
                 modalTarget:'gfwork',
