@@ -6,6 +6,41 @@
 $(document).ready(function(){
 
 
+	// Update height background image =====================================
+
+	function updateHeight(){
+		var height = $(window).height();
+		$('.top').css('height', height); 
+	};
+
+	$(document).ready(updateHeight);
+	$(window).resize(updateHeight);
+
+
+
+
+	// Nav bar scroll effect =====================================
+
+	navBar();
+	    
+	function navBar(){
+
+		var aa = $("#nav-bar").offset().top + 50;
+
+		$(document).scroll(function(){
+		    if($(this).scrollTop() > aa)
+		    {   
+		       $('#nav-bar').css({"background":"red"});
+		    } else {
+		       $('#nav-bar').css({"background":"transparent"});
+		    }
+		});
+
+	};
+
+
+
+
 	// On window load fade in ====================================
 
     delayText();
@@ -30,9 +65,7 @@ $(document).ready(function(){
 
 	// $('#nav-bar').hide();
 
-	$(window).scroll(function() {
-	   $('#nav-bar').show();
-	});
+	
 
 	// $('#work').scroll(function() {
 	//     $('#nav-bar').hide();

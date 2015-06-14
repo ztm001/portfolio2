@@ -316,14 +316,18 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="src/js/animatedmodal.min.js"></script>
 <script src="src/js/responsive-nav.js"></script>
 <script src="src/js/main.js"></script>
 
+
+
 <script>
 
-    var nav = responsiveNav(".nav-collapse", { // Selector
+  // responsive nav options
+
+  var nav = responsiveNav(".nav-collapse", { // Selector
     animate: true, // Boolean: Use CSS3 transitions, true or false
     transition: 300, // Integer: Speed of the transition, in milliseconds
     label: "Menu", // String: Label for the navigation toggle
@@ -339,10 +343,12 @@
     close: function(){} // Function: Close callback
   });
 
+
+  // Start pop up modal js
+
   $('#gfmodal').animatedModal({
                 modalTarget:'gfwork',
-                color:'#141516'
-        
+                color:'#141516'      
   });
 
   $("#dgmodal").animatedModal({
@@ -365,65 +371,12 @@
                 color:'#32567d',
   });
 
+</script>
 
 
-
-  // function getScrollTop(){
-  //       if(typeof pageYOffset!= 'undefined'){
-  //           //most browsers except IE before #9
-  //           return pageYOffset;
-  //       }
-  //       else{
-  //           var B= document.body; //IE 'quirks'
-  //           var D= document.documentElement; //IE with doctype
-  //           D= (D.clientHeight)? D: B;
-  //           return D.scrollTop;
-  //       }
-  //   }
-    
-  //   alert(getScrollTop())
-
-
-
-    /* ---------------------------------------------- /*
-     * Transparent navbar animation - this code works
-    /* ---------------------------------------------- */
-
-    // function navbarCheck() {
-    //   if (navbar.length > 0 && navbar.hasClass('navbar-transparent')) {
-    //     navbatTrans = true;
-    //   } else {
-    //     navbatTrans = false;
-    //   }
-    // }
-
-    // function navbarAnimation(navbar, moduleHero, navHeight) {
-    //   var topScroll = $(window).scrollTop();
-    //   if (navbar.length > 0 && navbatTrans != false) {
-    //     if (topScroll >= navHeight) {
-    //       navbar.removeClass('navbar-transparent');
-    //     } else {
-    //       navbar.addClass('navbar-transparent');
-    //     }
-    //   }
-    // };
-
-
-
-
- 
-
-
-  </script>
-
-
-
-
-
-  <noscript>
-    <h1>To view this site properly, please enable Javascript in your web browser settings!</h1>
-  </noscript>
-
+<noscript>
+  <h1>To view this site properly, please enable Javascript in your web browser settings!</h1>
+</noscript>
 
 
 </body>
