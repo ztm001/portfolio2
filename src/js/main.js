@@ -21,6 +21,11 @@ $(document).ready(function(){
 
 	// Nav bar scroll effect =====================================
 
+
+
+
+	
+
 	navBar();
 	    
 	function navBar(){
