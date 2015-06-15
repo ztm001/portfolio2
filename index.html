@@ -26,8 +26,10 @@
 
   <div id="home" class="top container-fluid">
 
-      <div id="nav-bar">
+      <div id="nav-bar" class="nav-bar-top">
         <a href="index.html" class="nav-logo">ZTM</a>
+
+        
 
         <ul id="nav" class="nav-collapse">
           <li><a href="#work">Work</a></li>
@@ -81,7 +83,7 @@
 
       <div class="row">
           <div class="col-xs-12">
-            <h2>Work</h2>
+            <h2>Work<i class="flaticon-rectangular4"></i></h2>
           </div>
       </div>
 
@@ -330,10 +332,10 @@
   var nav = responsiveNav(".nav-collapse", { // Selector
     animate: true, // Boolean: Use CSS3 transitions, true or false
     transition: 300, // Integer: Speed of the transition, in milliseconds
-    label: "Menu", // String: Label for the navigation toggle
+    label: "<i class=\"flaticon-rectangular4\"></i>", // String: Label for the navigation toggle
     insert: "before", // String: Insert the toggle before or after the navigation
     customToggle: "", // Selector: Specify the ID of a custom toggle
-    closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+    closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
     openPos: "relative", // String: Position of the opened nav, relative or static
     navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
     navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active

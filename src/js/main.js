@@ -30,9 +30,12 @@ $(document).ready(function(){
 		$(document).scroll(function(){
 		    if($(this).scrollTop() > aa)
 		    {   
-		       $('#nav-bar').css({"background":"red"});
+		       $('#nav-bar').removeClass("nav-bar-top");
+		       $('#nav-bar').addClass("nav-bar-scroll, nav-bar-scroll a");
+
 		    } else {
-		       $('#nav-bar').css({"background":"transparent"});
+		       $('#nav-bar').removeClass("nav-bar-scroll, nav-bar-scroll a");
+		       $('#nav-bar').addClass("nav-bar-top");
 		    }
 		});
 
