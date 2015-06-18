@@ -8,7 +8,6 @@
 
 
 @import 'responsive-nav';
-@import 'thumb-hover';
 
 
 
@@ -59,11 +58,12 @@
 		height: 100%;
 		min-height: 100%;
    		overflow: none;
-  		background: url("../images/port-background.jpg") no-repeat center center;
- 		-webkit-background-size: cover;
- 		-moz-background-size: cover;
-  		-o-background-size: cover;
-  		background-size: cover;
+   		background-color: black;
+  	// 	background: url("../images/port-background.jpg") no-repeat center center;
+ 		// -webkit-background-size: cover;
+ 		// -moz-background-size: cover;
+  	// 	-o-background-size: cover;
+  	// 	background-size: cover;
   		
 		
 }
@@ -99,169 +99,67 @@
 
 // Work Section
 
-
-#getfree {
-	padding: 31% 0;
-}
-
-
-#lordsofdogtown,
-#fontface,
-#surfaid,
-#damagedgoods {
-	padding: 30% 0;
-	max-width: 100%;
-}
-
-.subrowtop {
-	margin-bottom: 5%;
-}
-
-
-
-
-
-
-
-#getfree {
-	background: url("../images/getfree-thumb.jpg") no-repeat center center;
- 		-webkit-background-size: cover;
- 		-moz-background-size: cover;
-  		-o-background-size: cover;
-  		background-size: cover;
-
-  		
-}
-
-#lordsofdogtown {
-	background: url("../images/lod-thumb.jpg") no-repeat center center;
- 		-webkit-background-size: cover;
- 		-moz-background-size: cover;
-  		-o-background-size: cover;
-  		background-size: cover;
-}
-
-#fontface {
-	background: url("../images/fontface-thumb.jpg") no-repeat center center;
- 		-webkit-background-size: cover;
- 		-moz-background-size: cover;
-  		-o-background-size: cover;
-  		background-size: cover;
-}
-
-#surfaid {
-	background: url("../images/surfaid-thumb.jpg") no-repeat center center;
- 		-webkit-background-size: cover;
- 		-moz-background-size: cover;
-  		-o-background-size: cover;
-  		background-size: cover;
-}
-
-#damagedgoods {
-	background: url("../images/dgz-thumb.jpg") no-repeat center center;
- 		-webkit-background-size: cover;
- 		-moz-background-size: cover;
-  		-o-background-size: cover;
-  		background-size: cover;
-}
-
-
-// Filter black and white at desktop
-// @media screen and (min-width: 700px) {
-    
-// 	#getfree,
-// 	#lordsofdogtown,
-// 	#fontface,
-// 	#surfaid,
-// 	#damagedgoods {
-// 		-webkit-filter: grayscale(100%); 
-//   		filter: grayscale(100%);
-//   		transition: all 1s ease-out;
-// 	}
-
-// 	#getfree:hover,
-// 	#lordsofdogtown:hover,
-// 	#fontface:hover,
-// 	#surfaid:hover,
-// 	#damagedgoods:hover {
-// 		-webkit-filter: none; 
-//   		filter: none;
-//   		transition: all 0.5s ease-out;
-// 	}
-
-
-// }
-
-
-
-// Modal Styles
-
-
-
-#gfwork,
-#dgwork,
-#lodwork,
-#surfwork,
-#ffwork {
-	color: white;
-	// border: 15px solid $main-col;
-}
-
-.close-svg {
-	max-width: 40px;
-	display: block;
-	float: right;
-	margin: 15px;
-	cursor: pointer;
-}
-
-.modal-header {
+.jquery-ui-accordion h2 {
 	text-align: center;
-	font-family: $header-font;
-	font-size: 3em;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-bottom: 5%;
-}
-
-
-.project-info {	
-	padding: 0 0 0 10%;
-	border-radius: 5px;
-}
-
-.project-info h4 {	
-	font-family: $header-font;
+	padding: 70px 0;
 	font-size: 2.5em;
-	margin: 10px 0;
 }
 
-.project-info p {	
-	font-size: 1.2em;
+.jquery-ui-accordion {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 
-.modal-content img {
-	max-width: 100%;
-	height: auto;
+.jquery-ui-accordion h3 {
+	outline: none;
+	padding: 25px 0 25px 5%;
+	font-size: 2.5em;
+	cursor: pointer;
+	border-bottom: thin solid #cccccc;
+	background-color: #f1f1f1;
 }
 
-.view-site {
-	text-align: center;
-	font-family: $header-font;
-	font-size: 3em;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-bottom: 5%;
-	
+@media screen and (max-width: 768px) {
+	.jquery-ui-accordion h3 {
+		padding: 15px 0 15px 5%;
+		font-size: 1.5em;
+	}
 }
 
-.view-site p {
-	max-width: 20%;
-	border: thin solid $splash-col;
-	margin: 0 auto;
-	text-decoration: none;
+@media screen and (max-width: 600px) {
+	.jquery-ui-accordion h3 {
+		padding: 15px 0 15px 5%;
+		font-size: 1.2em;
+	}
 }
+
+.jquery-ui-accordion .row:nth-child(2) {
+	border-top: thin solid #cccccc;
+}
+
+.jquery-ui-accordion h3:hover {
+	background-color: white;
+}
+
+.jquery-ui-accordion a {
+	color: black;
+
+}
+
+.jquery-ui-accordion p {
+	font-size: 2em;
+
+}
+
+
+
+
 
 
 // Contact Styles

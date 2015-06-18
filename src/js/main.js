@@ -6,6 +6,8 @@
 $(document).ready(function(){
 
 
+
+
 	// Update height background image =====================================
 
 	function updateHeight(){
@@ -30,7 +32,7 @@ $(document).ready(function(){
 	    
 	function navBar(){
 
-		var aa = $("#nav-bar").offset().top + 50;
+		var aa = $("#nav-bar").offset().top;
 
 		$(document).scroll(function(){
 		    if($(this).scrollTop() > aa)
