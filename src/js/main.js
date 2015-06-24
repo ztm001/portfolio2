@@ -5,6 +5,27 @@
 
 $(document).ready(function(){
 
+	// OWL ====================================
+
+
+	  $("#owl-slider").owlCarousel({
+
+	      navigation : true, // Show next and prev buttons
+	      navigationText : ["Prev","Next"],
+	      pagination : false,
+	      slideSpeed : 300,
+	      paginationSpeed : 400,
+	      singleItem:true
+
+	      // "singleItem:true" is a shortcut for:
+	      // items : 1, 
+	      // itemsDesktop : false,
+	      // itemsDesktopSmall : false,
+	      // itemsTablet: false,
+	      // itemsMobile : false
+
+	  });
+
 
 
 
@@ -86,6 +107,9 @@ $(document).ready(function(){
 	//     if('#home'.pageYOffset>400)alert('User has scrolled at least 400 px!');
 	// }
 	// window.onscroll=testScroll
+
+
+
 
 	
 
