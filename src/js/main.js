@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	  $("#owl-slider").owlCarousel({
 
-	      navigation : true, // Show next and prev buttons
+	      navigation : false, // Show next and prev buttons
 	      navigationText : ["Prev","Next"],
 	      pagination : false,
 	      slideSpeed : 300,

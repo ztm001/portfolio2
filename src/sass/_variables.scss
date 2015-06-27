@@ -44,8 +44,23 @@
 
 // ==================== Type Faces ====================
 
-$header-font: 'Bebas Neue', sans-serif;
-$body-font: 'Hind', sans-serif;
+@font-face {
+    font-family: 'surfacemedium';
+    src: url('../fonts/Surface_Medium-webfont.eot');
+    src: url('../fonts/Surface_Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Surface_Medium-webfont.woff') format('woff'),
+         url('../fonts/Surface_Medium-webfont.ttf') format('truetype'),
+         url('../fonts/Surface_Medium-webfont.svg#surfacemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$header-font: 'surfacemedium', sans-serif;
+// $body-font:'Didact Gothic', sans-serif;
+$body-font: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+
 
 
 
