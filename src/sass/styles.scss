@@ -238,14 +238,7 @@
 }
 
 .accord-back-color {
-	background: rgba(133,50,126,1);
-	background: -moz-linear-gradient(45deg, rgba(133,50,126,1) 0%, rgba(20,21,22,1) 13%, rgba(20,21,22,1) 82%, rgba(20,21,22,1) 87%, rgba(133,50,126,1) 100%);
-	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(133,50,126,1)), color-stop(13%, rgba(20,21,22,1)), color-stop(82%, rgba(20,21,22,1)), color-stop(87%, rgba(20,21,22,1)), color-stop(100%, rgba(133,50,126,1)));
-	background: -webkit-linear-gradient(45deg, rgba(133,50,126,1) 0%, rgba(20,21,22,1) 13%, rgba(20,21,22,1) 82%, rgba(20,21,22,1) 87%, rgba(133,50,126,1) 100%);
-	background: -o-linear-gradient(45deg, rgba(133,50,126,1) 0%, rgba(20,21,22,1) 13%, rgba(20,21,22,1) 82%, rgba(20,21,22,1) 87%, rgba(133,50,126,1) 100%);
-	background: -ms-linear-gradient(45deg, rgba(133,50,126,1) 0%, rgba(20,21,22,1) 13%, rgba(20,21,22,1) 82%, rgba(20,21,22,1) 87%, rgba(133,50,126,1) 100%);
-	background: linear-gradient(45deg, rgba(133,50,126,1) 0%, rgba(20,21,22,1) 13%, rgba(20,21,22,1) 82%, rgba(20,21,22,1) 87%, rgba(133,50,126,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85327e', endColorstr='#85327e', GradientType=1 );
+	background-color: $matte-black;
 }
 
 
