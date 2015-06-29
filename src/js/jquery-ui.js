@@ -868,6 +868,7 @@ var widget = $.widget;
  */
 
 
+
 var accordion = $.widget( "ui.accordion", {
 	version: "1.11.4",
 	options: {
@@ -903,6 +904,8 @@ var accordion = $.widget( "ui.accordion", {
 		height: "show"
 	},
 
+	
+
 	_create: function() {
 		var options = this.options;
 		this.prevShow = this.prevHide = $();
@@ -922,6 +925,8 @@ var accordion = $.widget( "ui.accordion", {
 		}
 		this._refresh();
 	},
+
+
 
 	_getCreateEventData: function() {
 		return {
@@ -1413,6 +1418,7 @@ var accordion = $.widget( "ui.accordion", {
 				}
 			});
 	},
+
 
 	_toggleComplete: function( data ) {
 		var toHide = data.oldPanel;
