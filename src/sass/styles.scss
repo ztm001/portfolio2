@@ -60,19 +60,12 @@
 	height: 100%;
 	min-height: 100%;
 	overflow: none;
+	background-color: $matte-black;
   	// 	background: url("../images/van.jpg") no-repeat center center;
  		// -webkit-background-size: cover;
  		// -moz-background-size: cover;
   	// 	-o-background-size: cover;
   	// 	background-size: cover;	
-	background: rgba(51,133,119,1);
-	background: -moz-linear-gradient(-45deg, rgba(51,133,119,1) 0%, rgba(20,21,22,1) 17%, rgba(20,21,22,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(51,133,119,1)), color-stop(17%, rgba(20,21,22,1)), color-stop(100%, rgba(20,21,22,1)));
-	background: -webkit-linear-gradient(-45deg, rgba(51,133,119,1) 0%, rgba(20,21,22,1) 17%, rgba(20,21,22,1) 100%);
-	background: -o-linear-gradient(-45deg, rgba(51,133,119,1) 0%, rgba(20,21,22,1) 17%, rgba(20,21,22,1) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(51,133,119,1) 0%, rgba(20,21,22,1) 17%, rgba(20,21,22,1) 100%);
-	background: linear-gradient(135deg, rgba(51,133,119,1) 0%, rgba(20,21,22,1) 17%, rgba(20,21,22,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#338577', endColorstr='#141516', GradientType=1 );
 }
 
 

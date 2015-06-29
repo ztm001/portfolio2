@@ -47,6 +47,7 @@ $(document).ready(function(){
 
 
 
+	$(this).scrollTop(0); // fixes refresh bug on navBar
 
 	
 
