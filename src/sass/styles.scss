@@ -60,12 +60,16 @@
 	height: 100%;
 	min-height: 100%;
 	overflow: none;
-	background-color: $matte-black;
-  	// 	background: url("../images/van.jpg") no-repeat center center;
- 		// -webkit-background-size: cover;
- 		// -moz-background-size: cover;
-  	// 	-o-background-size: cover;
-  	// 	background-size: cover;	
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.top-overlay {
+	background: url("../images/path.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	background-attachment: fixed;
 }
 
 
