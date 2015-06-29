@@ -214,10 +214,10 @@
 
 .project-text {
 	padding: 5% 5% 0 5%;
-	font-size: 0.9em;
+	font-size: 1em;
 	line-height: 1.5em;
 	letter-spacing: 1px;
-	color: #f1f1f1;
+	color: black;
 }
 
 .project-text span {
@@ -226,11 +226,11 @@
 }
 
 .project-text a {
-	color: #f1f1f1;
+	color: black;
 }
 
 .project-text a:hover {
-	color: #85327e;
+	color: $highlight-col;
 }
 
 .project-info {
@@ -238,7 +238,7 @@
 }
 
 .accord-back-color {
-	background-color: $matte-black;
+	background-color: #f1f1f1;
 }
 
 
