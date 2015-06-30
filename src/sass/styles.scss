@@ -272,17 +272,22 @@
 }
 
 #currently h3 {
-	padding: 20% 0;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 1.5em;
+	padding: 25% 0;
 	color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 	#currently h3 {
-		font-size: 1.5em;
-		padding: 25% 0;
-		
+		font-size: 2.5em;
+		padding: 20% 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#currently h3 {
+		padding: 15% 0;
 	}
 }
 
@@ -305,10 +310,33 @@
 
 
 .description {
-	padding: 20% 15%;
-	font-size: 1.5em;
+	padding: 10% 15%;
 	background-color: rgba(255, 255, 255, 0.8);
 	color: black;
+}
+
+.description h2 {
+	font-family: $header-font;
+	font-size: 2.5em;
+}
+
+@media screen and (min-width: 768px) {
+	.description h2 {
+		font-size: 3em;
+	}
+}
+
+.description p {
+	padding-top: 10px;
+	font-size: 1em;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+}
+
+@media screen and (min-width: 992px) {
+	.description p {
+		font-size: 1em;
+	}
 }
 
 
