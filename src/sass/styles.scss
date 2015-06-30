@@ -136,8 +136,9 @@
 	padding: 200px 0 60px 5%;
 	font-size: 2.5em;
 	font-family: $header-font;
-	color: #f1f1f1;
+	color: #fff;
 	background-color: rgba(0, 0, 0, 0.7);
+	border-top: 2px solid black;
 		
 }
 
@@ -179,7 +180,7 @@
 	font-size: 2.5em;
 	cursor: pointer;
 	border-bottom: thin solid #cccccc;
-	background-color: #f1f1f1;
+	background-color: #ededed;
 }
 
 .jquery-ui-accordion h3 span {

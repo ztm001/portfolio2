@@ -8,7 +8,7 @@ $(document).ready(function(){
 	// OWL ====================================
 
 
-	  $("#owl-dgz,#owl-ngo").owlCarousel({
+	  $("#owl-dgz,#owl-ngo, #owl-lod, #owl-font, #owl-surf").owlCarousel({
 
 	      navigation : false, // Show next and prev buttons
 	      navigationText : ["Prev","Next"],
