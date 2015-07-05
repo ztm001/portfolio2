@@ -34,10 +34,7 @@
 
 }
 
-#nav-bar a:hover {
-	color: $highlight-col;
-	transition: color 0.2s ease;
-}
+
 
 .nav-bar-top {
 	padding: 25px 0 5px 0;
@@ -51,6 +48,9 @@
 .nav-bar-top a {
 	color: white;
 }
+
+
+
 
 .nav-bar-scroll {
 	padding: 10px 0 5px 0;
@@ -67,6 +67,7 @@
 
 .nav-bar-scroll a {
 	color: black;
+	
 }
 
 #work-offset,
@@ -78,6 +79,36 @@
 	z-index: -2;
 	visibility: hidden;
 }
+
+// Hover underline for navigation links
+
+.nav-bar-top .line {
+	border-bottom: 3px solid transparent;
+	padding-bottom: 6px;
+	transition: all 0.2s ease;
+}
+
+.nav-bar-top .line:hover {
+	border-bottom: 3px solid #fff;
+	padding-bottom: 3px;
+	transition: all 0.2s ease;
+}
+
+
+.nav-bar-scroll .line {
+	border-bottom: 3px solid transparent;
+	padding-bottom: 3px;
+	transition: all 0.2s ease;
+}
+
+.nav-bar-scroll .line:hover {
+	border-bottom: 3px solid black;
+	padding-bottom: 0px;
+	transition: all 0.2s ease;
+}
+
+
+
 
 
 // Top Section Styles ==================================================
