@@ -13,9 +13,8 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
-
-
-
+ 
+  
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -24,6 +23,9 @@
   <![endif]-->
 </head>
 <body>
+<div class="se-pre-con"></div>
+
+
 
   <div class="top-overlay">
     <div id="home" class="top container-fluid">
@@ -34,9 +36,9 @@
         
 
         <ul id="nav" class="nav-collapse">
-          <li><a data-scroll href="#work-offset" class="line">Work</a></li>
-          <li><a data-scroll href="#about-offset" class="line">About</a></li>
-          <li><a data-scroll href="#contact-offset" class="line">Contact</a></li>
+          <li><a data-scroll href="#work" class="line">Work</a></li>
+          <li><a data-scroll href="#about" class="line">About</a></li>
+          <li><a data-scroll href="#contact" class="line">Contact</a></li>
         </ul>
 
       </div>
@@ -50,17 +52,22 @@
       </div>
 
 
+      <a data-scroll href="#work-offset">
+        <img id="arrow" src="images/arrow-down.png" alt="">
+      </a>
+
+
 
     </div>	<!-- Closing 'top' + container fluid -->
-  </div>
+  </div> <!-- closing top overlay -->
 
 
 
 
   <!-- Work Section -->
-  <a id="work-offset"></a>
+  <a id="work"></a>
   
-  <div id="work" class="jquery-ui-accordion">
+  <div id="work-offset" class="jquery-ui-accordion">
 
            
       <div class="overlay">
@@ -274,8 +281,8 @@
   
 
   <!-- About Section -->
-  <a id="about-offset"></a>
-  <div id="about" class="container-fluid">
+  <a id="about"></a>
+  <div id="about-offset" class="container-fluid">
       <div id="myphoto" class="row">
 
           
@@ -328,9 +335,9 @@
 
 
   <!-- Contact Section -->
-  <a id="contact-offset"></a>
+  <a id="contact"></a>
 
-  <div id="contact" class="container-fluid">
+  <div id="contact-offset" class="container-fluid">
       <div class="row">
 
         <div class="col-sm-4">
@@ -382,81 +389,6 @@
 <script src="src/js/SmoothScroll.js"></script> <!-- For smooth mousewheel scrolling -->
 <script src="src/js/owl.carousel.js"></script>
 <script src="src/js/main.js"></script>
-
-
-
-<script>
-
-
-  // owl-carousel
-
-
-
-
-
-  // accordion
-
-
- 
-
-    $('.jquery-ui-accordion').accordion({
-              header: 'h3',
-              collapsible: true,
-              active: false,
-              heightStyle: 'content',
-              activate: function (event, ui) {
-                  var scrollTop = $(".accordion").scrollTop();
-                  if(!ui.newHeader.length) return;
-                  var top = $(ui.newHeader).offset().top;
-                  $("html,body").animate({
-                      scrollTop: scrollTop + top - 42
-                  }, "fast");
-              }
-    });
-    
-
-
-
-
-
-  // Smooth Scroll
-
-  smoothScroll.init({
-      speed: 800, // Integer. How fast to complete the scroll in milliseconds
-      easing: 'easeOutQuart', // Easing pattern to use
-      updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-      callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
-      callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-  });
-
-
-
-
-
-  // responsive nav options
-
-  var nav = responsiveNav(".nav-collapse", { // Selector
-    animate: true, // Boolean: Use CSS3 transitions, true or false
-    transition: 300, // Integer: Speed of the transition, in milliseconds
-    label: "<i class=\"flaticon-rectangular4\"></i>", // String: Label for the navigation toggle
-    insert: "before", // String: Insert the toggle before or after the navigation
-    customToggle: "", // Selector: Specify the ID of a custom toggle
-    closeOnNavClick: true, // Boolean: Close the navigation when one of the links are clicked
-    openPos: "relative", // String: Position of the opened nav, relative or static
-    navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
-    navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
-    jsClass: "js", // String: 'JS enabled' class which is added to  element
-    init: function(){}, // Function: Init callback
-    open: function(){}, // Function: Open callback
-    close: function(){} // Function: Close callback
-  });
-
-
-
-
-</script>
-
 
 <noscript>
   <h1>To view this site properly, please enable Javascript in your web browser settings!</h1>
