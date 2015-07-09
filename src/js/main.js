@@ -5,20 +5,13 @@
 
 $(document).ready(function(){
 
-	// Progress loading bar ====================================
 
-	var options = {
-		bg: '#1dba9d'
-	};
-	var nanobar = new Nanobar( options );
-	nanobar.go( 30 ); 
-	nanobar.go(100);
 
 	// Preload icon ====================================
 
     $(window).load(function() {
       // Animate loader off screen
-      $('.se-pre-con').fadeOut('slow');
+      $('.pre-load').fadeOut('slow');
     });
 
 	// OWL ====================================
