@@ -58,10 +58,12 @@ $(document).ready(function(){
 		    {   
 		       $('#nav-bar').removeClass('nav-bar-top');
 		       $('#nav-bar').addClass('nav-bar-scroll, nav-bar-scroll a');
+		       $('#nav-logo-black').addClass('show');
 
 		    } else {
 		       $('#nav-bar').removeClass('nav-bar-scroll, nav-bar-scroll a');
 		       $('#nav-bar').addClass('nav-bar-top');
+		       $('#nav-logo-black').removeClass('show');
 		    }
 		});
 	};
