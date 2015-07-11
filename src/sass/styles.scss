@@ -165,16 +165,23 @@
 	height: 100%;
 	min-height: 100%;
 	overflow: none;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(44, 62, 80, 1);
+	transition: background-color 0.5s ease;
+}
+
+.top-arrow-hover {
+	background-color: rgba(44, 62, 80, 0.8);
+	transition: background-color 0.5s ease;
 }
 
 .top-overlay {
-	background: url("../images/path.jpg") no-repeat center center;
+	background: url("../images/arrow.svg") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;	
 	background-attachment: fixed;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -229,6 +236,10 @@
 	font-size: .5em;
 	font-family: $body-font;
 }
+
+
+
+// arrow styles
 
 #arrow {
 	display: none;

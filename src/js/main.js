@@ -82,9 +82,20 @@ $(document).ready(function(){
 
 	runIt();
 	function runIt() {
-	       $('#arrow').animate({bottom:'+=10'}, 1000);
-	       $('#arrow').animate({bottom:'-=10'}, 1000, runIt);
+	       $('#arrow').animate({bottom:'+=15'}, 800);
+	       $('#arrow').animate({bottom:'-=15'}, 800, runIt);
 	}
+
+	arrowHover();
+	function arrowHover(){
+
+		$('#arrow').hover(function(){
+			$('.top').addClass('top-arrow-hover');	
+		}, function(){
+			$('.top').removeClass('top-arrow-hover');
+		});
+
+	};
 
 
 
