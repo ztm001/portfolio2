@@ -132,6 +132,7 @@
 
 // Nav-logo
 
+
 .nav-logo img {
 	max-width: 80px;
 	position: absolute;
@@ -143,9 +144,11 @@
 
 @media screen and (max-width: 40em) {
 	#nav-logo-black {
-		top: 5px;
+		top: 7px;
 	}
 }
+
+
 
 
 .show {
@@ -165,13 +168,19 @@
 	height: 100%;
 	min-height: 100%;
 	overflow: none;
-	background-color: rgba(44, 62, 80, 1);
-	transition: background-color 0.5s ease;
+	background: url("../images/space.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+	transition: opacity 0.5s ease;
 }
 
-.top-arrow-hover {
-	background-color: rgba(44, 62, 80, 0.8);
-	transition: background-color 0.5s ease;
+@media screen and (min-width: 768px) {
+	.top-arrow-hover {
+		opacity: 0.9;
+		transition: opacity 0.5s ease;
+	}
 }
 
 .top-overlay {
@@ -180,15 +189,14 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;	
-	background-attachment: fixed;
 
 }
 
-@media screen and (max-width: 768px) {
-	.top-overlay {
-		background-attachment: scroll;
-	}
-}
+// @media screen and (max-width: 768px) {
+// 	.top-overlay {
+// 		background-attachment: scroll;
+// 	}
+// }
 
 
 
@@ -266,23 +274,23 @@
 
 
 
-// Work Section
+// Work Section  ==================================================
 
 
 
 .jquery-ui-accordion h2 {
 	text-align: left;
-	padding: 200px 0 60px 5%;
+	padding: 250px 0 60px 5%;
 	font-size: 2.5em;
 	font-family: $header-font;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.7);
-	border-top: 2px solid black;
+	color: black;
+	background-color: rgba(237, 237, 237, 0.3);
+
 		
 }
 
 .overlay {
-	background: url("../images/work-img.jpg") no-repeat center center;
+	background: url("../images/work-img1.jpg") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -292,6 +300,10 @@
 @media screen and (min-width: 768px) {
 	.jquery-ui-accordion h2 {
 		font-size: 3em;
+	}
+
+	.overlay {
+		background-attachment: fixed;
 	}
 }
 
@@ -320,6 +332,11 @@
 	cursor: pointer;
 	border-bottom: thin solid #cccccc;
 	background-color: #ededed;
+	transition: all 0.2s ease;
+}
+
+#ui-id-1 {
+	border-top: thin solid #cccccc;
 }
 
 .jquery-ui-accordion h3 span {
@@ -345,7 +362,8 @@
 
 .jquery-ui-accordion h3:hover {
 	background-color: #fff;
-	transition: background-color 0.2s ease;
+	padding-left: 5.5%;
+	transition: all 0.2s ease;
 }
 
 .ui-accordion-header.ui-state-active {
@@ -408,8 +426,9 @@
 // Currently Section styles
 
 #currently {
-	background-color: $matte-black;
+	background-color: rgba(230, 126, 34, 1);
 	font-family: $header-font;
+	letter-spacing: 1px;
 }
 
 #currently h3 {
@@ -526,11 +545,11 @@
 }
 
 .instagram {
-	background-color: rgba(51, 133, 119, 0.8);
+	background-color: rgba(230, 126, 34, 0.8);
 }
 
 .instagram:hover {
-	background-color: rgba(51, 133, 119, 1);
+	background-color: rgba(230, 126, 34, 1);
 }
 
 .myemail {
@@ -573,8 +592,8 @@
 .footer {
 	text-align: center;
 	font-size: 1em;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	background-color: $matte-black;
 	color: #fff;
 	letter-spacing: 1px;
